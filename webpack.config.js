@@ -9,11 +9,26 @@ output : {
     filename: 'bundle.js'
 },
 module: {
-    rules:[{
+
+
+
+    rules:[
+      {  test: /\.(svg|png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: 'public/images/[name].[ext]',
+
+      }}
+      ,
+      
+      
+      
+      {
         loader:'babel-loader',
         test :/\.js$/,
         exclude:/node_modules/
     },
+
   {
     test: /\.scss$/,
     use:[

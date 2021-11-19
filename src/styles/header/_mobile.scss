@@ -1,0 +1,92 @@
+
+
+html {
+    font-size:40.5%;
+
+}
+
+
+
+
+.navbar__Desktop{
+    display:none;
+ 
+}
+
+.navbar__Tablet{
+    display:none;
+}
+
+.navbar__Mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+}
+
+
+/* Logo */ 
+.logo {
+  margin: 3rem;
+}
+
+
+
+
+
+  /*Burger-Menu*/
+#Hamburger {
+        width:60px;
+        height:50px;
+        color:transparent;
+        background-color: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+
+    .main-home {
+        h2{
+            margin-top:0; 
+        }
+    }
+  
+
+.Hamburger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+    span{
+        margin: 0 auto;
+        position: relative;
+        width: 30px;
+        height: 6px;
+        background-color: white;
+        display: block;
+        &::after,&::before{
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 6px;
+            background-color: white;
+            display: block;
+        }
+        &::after{
+            margin-top: 12px;
+        }
+        &::before{
+            margin-top: -12px;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+

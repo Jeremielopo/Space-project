@@ -1,4 +1,23 @@
 @import './base/base';
+@import './base/reset';
+
+
+// import Main/mobile
+
+@import './header/mobile';
+@import './main/mobile';
 
 
 
+// import Main/tablet 
+@media (min-width:700px){
+@import './header/tablet';
+@import './main/tablet';
+}
+
+// importe Main/desktop
+@media (min-width:1020px){
+@import './header/desktop';
+@import './main/desktop';
+
+}

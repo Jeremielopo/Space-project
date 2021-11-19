@@ -1,0 +1,45 @@
+
+
+.navbar__Mobile{
+    display:none;
+}
+
+body {
+    position: relative;
+}
+
+.navbar__Tablet{
+    display:none;
+}
+
+
+
+.navbar__Desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+
+    .main-navbar {
+        height: 6rem;
+        position: relative;
+        margin-left: 24vw;
+        &::before{
+            content:"";
+            position: absolute;
+            height: 0.1rem;
+            background-color : $white;
+            width: 25vw;
+            top: 4rem;
+            right: 62vw;
+
+        }  
+    }
+    .active {
+        &::after{
+            top: 3.9rem;
+            left : -0.5rem; 
+        } 
+    }
+}

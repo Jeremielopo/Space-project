@@ -1,39 +1,32 @@
 import React from 'react';
 import{ BrowserRouter, Route , Routes } from 'react-router-dom';
-import Header from './Header';
-import Contact from "./Contact";
-import Portfolio from "./Portfolio";
+import Header from '../component/Header';
+import MobileHeader from '../component/Mobile-Header';
+import Technology from "./Technology";
+import Destination from "./Destination";
 import NotFound from './404';
 import Home from "./Home";
+import Crew from './Crew'
+import HeaderTablet from '../component/HeaderTablet';
 
 
+const App  = () =>  
 
-const App  = () =>  (
-
-
+(
     <BrowserRouter>
-          <div>
+          
           <Header  />
-          <Routes>
-          
+          <HeaderTablet />
+          <MobileHeader />
+          <Routes>         
           <Route exact path="/"  element = { <Home />  } /> 
-          <Route path= 'Portfolio'  element = { <Portfolio />  }  />
-          <Route path= 'Portfolio/:id'  element = { <Portfolio />  }  />
-          
-
-
-          <Route path="Contact/*"  element = { <Contact />  } />
-       
-  
-  
-          <Route path='*'  element= {<NotFound />   }      />
-  
+          <Route path= 'Technology'  element = { <Technology />  }  />
+          <Route path= 'Crew'  element = { <Crew />  }  />
+          <Route path="Destination/*"  element = { <Destination />  } />
+          <Route path='*'  element= {<NotFound />   }    />
         </Routes>
-          </div>
-        
          
        </BrowserRouter>
-  
-  
     );
+    
 export default App ;   

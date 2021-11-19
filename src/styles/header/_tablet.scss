@@ -1,0 +1,60 @@
+html {
+    font-size:62.5%;
+
+}
+
+
+.navbar__Mobile{
+    display:none;
+}
+
+.navbar__Tablet {
+    @include flex-row;
+    justify-content: space-between;
+    width: 100vw;
+    position: absolute; 
+    top:0; 
+}
+.main-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background : #ffffff14;
+    height: 12rem;
+    padding : 1rem 3rem;
+    width: 60vw;
+
+      
+    
+}
+
+
+.main-navbar__item {
+    list-style-type: none;
+    width: fit-content;
+    
+}
+
+.main-navbar__link {
+    text-decoration: none;
+    text-transform: uppercase;  
+    color : $white;
+    font-weight: bold;
+ 
+    
+}
+
+.active {
+    position: relative;
+    width: inherit;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 7rem;
+        right: 0rem;
+        height: 0.3rem;
+        width:  inherit;
+        background-color: white;
+    } 
+}

@@ -1,15 +1,64 @@
-html {
-    font-size:62.5%;
-    font-family: 'Roboto', sans-serif;
+// colors
+
+$background : #0B0D17;
+$white : #ffff;
+$blue : #D0D6F9;
+
+// Font-family && size
+
+$police: 'Bellefair', serif;
+$h1 : 15rem ;
+$h2: 10rem;
+$h3 : 5.6rem;
+$h4 : 3.2rem;
+$sb1:1.4rem;
+
+
+@mixin sb2 {
+    font-size:1.4rem;
+    letter-spacing: 2.35px;
 }
 
-body {
-   
-    font-size:1.6rem; 
+@mixin navtext {
+    font-size:1.6rem;
+    letter-spacing: 2.7px;
 }
+
+.main-navbar__link{
+    @include navtext;
+}
+
+html,body {
+    font-size:62.5%;
+    font-family: $police;
+    height:100%;
+}
+.body {
+    height: inherit;
+}
+
+#app {
+    height: 100%;
+    
+}
+
+
 
 h1{
-    font-size:1rem; 
+    font-size:$h1;
+}
+h2{
+    font-size :$h2;
+}
+h3{
+    font-size : $h3;
+}
+h4{
+    font-size: $h4;
+}
+h5{
+    font-size:2.8rem; 
+    letter-spacing: 4.75px;
 }
 
 
@@ -17,3 +66,9 @@ h1{
     font-weight: bold;
 }
 
+@mixin flex-row {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
