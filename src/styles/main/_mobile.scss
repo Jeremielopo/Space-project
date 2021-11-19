@@ -2,8 +2,100 @@
 .Destination, .Home,.Crew,.Technology { 
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    background-size: 100vw 100vh;
+  
+    background-size: 100vw 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 12vh;
   
 
+}
+.grey {
+    color:#FFFFFF;
+    opacity: 0.25; 
+
+}
+
+
+// Destination 
+
+
+.Destination-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .nav-bar{
+
+     display: flex;
+    width: 59vw;
+    justify-content: space-around;
+    @include navtext; 
+    
+
+    a{
+        text-decoration: none;
+    color: $blue; }
+    }
+
+}
+
+.marsimg{
+    width:35rem;
+    margin: 3rem 0;
+}
+.Destination-block__Title{
+ margin-top: 5rem;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;  
+  font-size:1.8rem; 
+}
+.Planet-Mars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Planet-Mars__Text{
+    width: 70vw;
+    text-align: center;
+    color:$blue;
+    font-size:2rem; 
+    line-height: 1.8;
+}
+
+.Block {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+ p{
+     width: 100vw;
+     text-align: center;
+     color:$blue;
+     font-size: 1.6rem;
+     @include sb2; 
+ }
+ .Block__elements{
+   font-family:  $police2;    
+   font-size: 2.8rem;
+   color: white;
+   text-transform: uppercase;
+ }
+}
+
+
+.Planet-Mars__title{
+
+    font-family: $police2;
+    font-size : 10em; 
+    text-transform: uppercase;
+}
+
+.line {
+    width: 80vw;
+    height: 1px;
+    background-color: #383B4B;
 }

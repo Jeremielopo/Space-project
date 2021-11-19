@@ -45,16 +45,3 @@ html {
     
 }
 
-.active {
-    position: relative;
-    width: inherit;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 7rem;
-        right: 0rem;
-        height: 0.3rem;
-        width:  inherit;
-        background-color: white;
-    } 
-}
