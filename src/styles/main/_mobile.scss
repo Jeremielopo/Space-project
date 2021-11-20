@@ -1,9 +1,9 @@
 
 .Destination, .Home,.Crew,.Technology { 
     background-repeat: no-repeat;
-    width: 100%;
+    height: inherit;
   
-    background-size: 100vw 100%;
+    background-size: cover;
     display: flex;
     justify-content: center;
     color: white;
@@ -42,7 +42,7 @@
 
 }
 
-.marsimg{
+.planetimg{
     width:35rem;
     margin: 3rem 0;
 }
@@ -53,12 +53,12 @@
   text-transform: uppercase;  
   font-size:1.8rem; 
 }
-.Planet-Mars{
+.Planet{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.Planet-Mars__Text{
+.Planet__Text{
     width: 70vw;
     text-align: center;
     color:$blue;
@@ -87,7 +87,7 @@
 }
 
 
-.Planet-Mars__title{
+.Planet__title{
 
     font-family: $police2;
     font-size : 10em; 

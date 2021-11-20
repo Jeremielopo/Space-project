@@ -3,7 +3,7 @@ import mars from '../../images/img/destination/image-mars.png'
 
 export  function ImgMars (){
 
-return <img className='marsimg' src={mars} alt="image of mars" />
+return <img className='planetimg' src={mars} alt="image of mars" />
 
 }
 
@@ -15,9 +15,9 @@ export  function Mars() {
 
 
 
-        <section className='Planet-Mars'>
-         <h1 className="Planet-Mars__title">Mars </h1>
-       <p className="Planet-Mars__Text"> Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+        <section className='Planet'>
+         <h1 className="Planet__title">Mars </h1>
+       <p className="Planet__Text"> Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
         the tallest planetary mountain in our solar system. It’s two and a half times 
         the size of Everest!</p>
         <div className="line" ></div>
