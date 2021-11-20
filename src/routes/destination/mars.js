@@ -3,7 +3,7 @@ import mars from '../../images/img/destination/image-mars.png'
 
 export  function ImgMars (){
 
-return <img className='planetimg' src={mars} alt="image of mars" />
+return <div className="planet-block"><img className='planetimg' src={mars} alt="image of mars" /></div>
 
 }
 

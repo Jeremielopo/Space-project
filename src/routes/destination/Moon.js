@@ -3,7 +3,7 @@ import moon from '../../images/img/destination/image-moon.png'
 
 export  function ImgMoon (){
 
-return <img className='planetimg' src={moon} alt="image of moon" />
+return <div className="planet-block"><img className='planetimg' src={moon} alt="image of moon" /></div>
 
 }
 export  function Moon() {

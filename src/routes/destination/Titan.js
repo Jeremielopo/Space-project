@@ -4,7 +4,7 @@ import titan from '../../images/img/destination/image-titan.png'
 
 export  function ImgTitan (){
 
-    return <img className='planetimg' src={titan} alt="Picture of Titan" />
+    return <div className="planet-block"><img className='planetimg' src={titan} alt="Picture of Titan" /></div>
     
     }
 

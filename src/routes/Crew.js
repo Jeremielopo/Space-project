@@ -12,7 +12,18 @@ export default function Crew() {
     const Tablet = useMediaQuery({ query: '(min-width: 700px)' });
     return (
         <div className='Crew'  style = {Desktop? {backgroundImage:`url(${backgroundDesktop})`}: (Tablet? {backgroundImage:`url(${backgroundTablet})`}: {backgroundImage:`url(${backgroundMobile})`}  )}>
-            404! 
+           <div className="Stack-block">
+           <div className="part-one">
+         <h5 className="Stack-block__Title"><span className="grey">02</span> Meet your crew</h5>
+     
+        
+       
+        
+        </div>
+
+
+
+           </div>
         </div>
     )
 }

@@ -10,14 +10,31 @@ export default function Home() {
   const Desktop = useMediaQuery({ query: '(min-width: 1020px)' });
   const Tablet = useMediaQuery({ query: '(min-width: 700px)' });
     return (
-        <div className="Home" style = {Desktop? {backgroundImage:`url(${backgroundDesktop})`}: (Tablet? {backgroundImage:`url(${backgroundTablet})`}: {backgroundImage:`url(${backgroundMobile})`}  )}>
+        <section className="Home" style = {Desktop? {backgroundImage:`url(${backgroundDesktop})`}: (Tablet? {backgroundImage:`url(${backgroundTablet})`}: {backgroundImage:`url(${backgroundMobile})`}  )}>
         <main className='main-home'
         
-        ><h2>HomePage</h2>
+        >
+        <div className="main-home__Texte">
+        <h5 >So, you want to travel to</h5>
+         <h2 className="main-home__Title">
+         Space
+         </h2>
+         <p className='main-home__paragraph' >
+         Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+         </p>
+        </div>
+
+        <div className="main-home__button">
+        <button className="main-home__CTA">Explore</button>
+        </div>
+       
+        
+        
+        
         </main>
         
         
-        </div>
+        </section>
 
     );
   }

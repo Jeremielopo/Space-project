@@ -3,7 +3,7 @@ import europa from '../../images/img/destination/image-europa.png'
 
 export  function ImgEuropa (){
 
-return <img className='planetimg' src={europa} alt="image of europa" />
+return <div className="planet-block"><img className='planetimg' src={europa} alt="image of europa" /></div>
 
 }
 

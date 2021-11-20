@@ -22,15 +22,22 @@ export default function Portfolio() {
 
     return   <section className='Destination' style = {Desktop? {backgroundImage:`url(${backgroundDesktop})`}: (Tablet? {backgroundImage:`url(${backgroundTablet})`}: {backgroundImage:`url(${backgroundMobile})`}  )}>
         
-        <div className="Destination-block">
-        <h5 className="Destination-block__Title"><span className="grey">01</span> Pick your destination</h5>
+        <main  className="Stack-block">
+        <div className="part-one">
+         <h5 className="Stack-block__Title"><span className="grey">01</span> Pick your destination</h5>
         <Routes>
         <Route path="mars" element={<ImgMars />} />
         <Route path="Titan" element={<ImgTitan />} />
         <Route path="*" element={<ImgMoon />} />
         <Route path="Europa" element={<ImgEuropa />} />
         </Routes>
-        <nav className="nav-bar" >
+        
+       
+        
+        </div>
+        
+        <div className="part-two">
+         <nav className="nav-bar" >
               <NavLink to="Moon">MOON</NavLink>
               <NavLink to="mars">MARS</NavLink>
               <NavLink to="Europa">EUROPA</NavLink>
@@ -41,8 +48,10 @@ export default function Portfolio() {
         <Route path="mars" element={<Mars />} />
         <Route path="Europa" element={<Europa />} />
         <Route path="Titan" element={<Titan />} />
-      </Routes>  
+      </Routes>
         </div>
+         
+        </main>
      
       
     

@@ -1,0 +1,96 @@
+//Destination
+
+.Destination {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 12vh;
+    height: inherit;
+
+}
+
+
+
+.Stack-block {
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    justify-content: center;
+
+    .Stack-block__Title {
+        margin-left: -19vw;
+        padding-bottom: 6rem;
+    }
+
+    .part-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    padding-top: 15rem;
+
+}
+
+
+
+    .part-one {
+        width:50vw 
+   
+    }
+.nav-bar,.line,.Block {
+    width:40vw;
+}
+.Planet__Text{
+    width:42vw;
+    text-align: left;
+
+}
+
+.Block {
+    p{
+        width :20vw
+    }
+}
+
+
+}
+
+.planet-block {
+    display: flex;
+    justify-content: center;
+}
+
+
+//home 
+
+
+.main-home{
+    display : flex; 
+}
+.main-home__paragraph {
+    width: 38vw;}
+
+.main-home__CTA {
+
+        width: 27vw;
+        height: 27vw;
+    }
+
+
+    .main-home__button {
+
+        align-items: center;
+        :hover{
+            outline: #ffffff11 solid 10rem;
+          
+
+        }
+    }
+
+    .main-home {
+        width: 100vw;
+        justify-content: space-around;
+    }

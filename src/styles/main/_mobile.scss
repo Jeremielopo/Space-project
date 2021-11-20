@@ -1,5 +1,5 @@
 
-.Destination, .Home,.Crew,.Technology { 
+ .Home,.Crew,.Technology { 
     background-repeat: no-repeat;
     height: inherit;
   
@@ -11,6 +11,33 @@
   
 
 }
+
+.Destination,.Home,.Crew,.Technology {
+    min-height: 800px;
+    overflow-y: hidden;
+}
+
+
+.Destination{ 
+    background-repeat: no-repeat;  
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 12vh;
+   
+  
+
+}
+
+.part-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .grey {
     color:#FFFFFF;
     opacity: 0.25; 
@@ -21,7 +48,7 @@
 // Destination 
 
 
-.Destination-block{
+.Stack-block{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +73,7 @@
     width:35rem;
     margin: 3rem 0;
 }
-.Destination-block__Title{
+.Stack-block__Title{
  margin-top: 5rem;
   text-align: center;
   font-weight: 400;
@@ -99,3 +126,37 @@
     height: 1px;
     background-color: #383B4B;
 }
+
+//home 
+.main-home__button {
+    display: flex;
+    justify-content: center;
+}
+
+.main-home__CTA {
+
+    font-family: $police2;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    font-size: 5rem;
+    border: 1px solid transparent;
+    background: white;
+}
+
+.main-home__Texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home__paragraph{
+    width: 79vw;
+    font-size: 2.6rem;
+    text-align: center;
+    color:$blue;
+    line-height: 4.5rem;
+}
+
+//Crew
