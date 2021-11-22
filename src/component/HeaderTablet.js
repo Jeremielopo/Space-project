@@ -18,9 +18,9 @@ export default function HeaderTablet() {
         </div>
         <nav className='main-navbar'>
         <li className="main-navbar__item"><NavLink to="/"  className="main-navbar__link" > Home</NavLink> </li> 
-        <li className="main-navbar__item"><NavLink to="/Destination" className="main-navbar__link">Destination</NavLink> </li>
-        <li className="main-navbar__item"> <NavLink to="/Crew"   className="main-navbar__link" > Crew</NavLink></li>        
-        <li className="main-navbar__item"><NavLink to="/Technology"   className="main-navbar__link" > Technology</NavLink> </li>
+        <li className="main-navbar__item"><NavLink to="/Destination/*" className="main-navbar__link">Destination</NavLink> </li>
+        <li className="main-navbar__item"> <NavLink to="/Crew/*"   className="main-navbar__link" > Crew</NavLink></li>        
+        <li className="main-navbar__item"><NavLink to="/Technology/*"   className="main-navbar__link" > Technology</NavLink> </li>
         </nav>
         </header>
     )

@@ -35,9 +35,9 @@ export default function MobileHeader() {
     <button onClick={closeModal}>close</button>
     <nav className='main-navbar'>
     <li className="main-navbar__item"><NavLink to="/"  className="main-navbar__link"  onClick={closeModal}> Home</NavLink> </li> 
-    <li className="main-navbar__item"><NavLink to="/Destination" className="main-navbar__link" onClick={closeModal}>Destination</NavLink> </li> 
-    <li className="main-navbar__item"> <NavLink to="/Crew"   className="main-navbar__link"  onClick={closeModal}> Crew</NavLink></li>  
-    <li className="main-navbar__item"><NavLink to="/Technology"   className="main-navbar__link" onClick={closeModal} > Technology</NavLink> </li>
+    <li className="main-navbar__item"><NavLink to="/Destination/*" className="main-navbar__link" onClick={closeModal}>Destination</NavLink> </li> 
+    <li className="main-navbar__item"> <NavLink to="/Crew/*"   className="main-navbar__link"  onClick={closeModal}> Crew</NavLink></li>  
+    <li className="main-navbar__item"><NavLink to="/Technology/*"   className="main-navbar__link" onClick={closeModal} > Technology</NavLink> </li>
  
     </nav>
 

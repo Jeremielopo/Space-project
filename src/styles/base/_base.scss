@@ -3,6 +3,7 @@
 $background : #0B0D17;
 $white : #ffff;
 $blue : #D0D6F9;
+$dark-blue: #0B0D17;
 
 // Font-family && size
 
@@ -33,16 +34,15 @@ html,body {
     font-size:62.5%;
     font-family: $police;
     height: 100%;
+    background-color : $dark-blue;
   
 }
 .body {
     height: inherit;
+     
 }
 
-#app {
-    height: 100%;
-    
-}
+
 
 
 

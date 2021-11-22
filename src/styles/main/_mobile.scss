@@ -159,4 +159,147 @@
     line-height: 4.5rem;
 }
 
+
+
+#app {
+    overflow-x: hidden;
+    position: relative;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.navbar__Desktop{
+    width: 100vw;
+}
+
 //Crew
+.Crew {
+    flex-direction: column;
+    padding-top: 15vh;
+    .Stack-block__Title{
+        color :white; 
+    }
+    .Stack-block{
+      justify-content: normal;  
+      width: 100vw;
+    }
+    .nav-bar{
+        width: 36vw;
+    }
+    .planet-block{
+        position: relative;
+        
+  
+       
+    }
+    .Stack-block__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a.nav-bar__items.active{
+        background-color: white;
+        opacity: 1;
+    }
+    
+    .nav-bar__items{
+        background-color: #ffffff;
+        opacity: 0.17;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+    }
+    .crewimg {
+        position: absolute;
+        top: 2rem;
+        z-index: 0;
+        left: 22vw;
+        height: 37rem;
+        margin : 3rem 0 ; 
+    }
+    .line{
+        margin: 42rem 0 6rem 0;
+        z-index: 1;
+    }
+
+}
+
+.Stack-Text{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 9rem 0;
+    margin: 8rem 0;
+    .Stack-Text__title{
+        font-size: 4em;
+        margin: 0.67em 0;
+        opacity: 0.5;
+        font-family: $police2;
+        text-transform: uppercase;
+    }
+    .Stack-Text__subtitle{
+        font-size: 3rem;
+        font-family: "Bellefair", serif;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+    p{
+        width: 80vw;
+        text-align: center;
+        color: $blue;
+        letter-spacing: 2.35px;
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+}
+
+//technology
+
+
+.Technology{
+
+    flex-direction: column;
+    .Stack-block__Title{
+        color: white; 
+        font-size : 3rem; 
+    }
+    .crewimg{
+        width : 102vw
+    }
+    .nav-bar{
+       .nav-bar__items{
+        font-family: $police2;
+        font-weight: bold;
+        border: 1px solid rgba(255, 255, 255, 0.103);
+        border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
+        font-size : 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       } 
+    }
+    .Stack-block__flex{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    }
+    .Stack-Text__subtitle{
+
+    }
+    .Stack-Text__title{
+        @include sb2; 
+        color : $blue; 
+        font-family: $police;
+    }
+  
+}
+
+a.nav-bar__items.active {
+    background: white;
+    color:$dark-blue;
+}

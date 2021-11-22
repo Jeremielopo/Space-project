@@ -17,3 +17,95 @@
 .main-home{
     margin-top: 8rem;
 }
+//crew
+.Crew {
+    flex-direction: column;
+    padding-top: 27vh;
+    .Stack-block__Title{
+        margin-left: -68vw; 
+    }
+    
+    .planet-block{ 
+        order: 5;
+        flex-direction: unset;
+        align-items: self-end;
+        padding: 0;
+        flex-grow: 5;
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        img{
+            height: 38rem;
+        }
+      .crewimg{
+        position: initial;
+        top: 0;
+        z-index: 0;
+        left: 0;
+        height: auto;
+        margin: 0;
+      }
+    
+        .line{
+            margin:0;
+            padding:0;
+            height: 0;
+            width: 0;
+        }
+    }
+
+    .nav-bar {
+        
+        .nav-bar__items{
+            &:hover{
+                background:#979797; 
+            }
+            
+        }
+        .nav-bar__items.active{
+            &:hover{
+                background: white; 
+            }
+           
+        }
+    }
+
+}
+
+// Technology 
+
+
+.Technology{ 
+
+.Stack-block__Title{
+    margin-top : 15rem; 
+    font-size: 2.5rem; 
+}
+
+
+.nav-bar {
+    width : 41vw;
+    .nav-bar__items{
+        color:white; 
+    }
+    .nav-bar__items.active{
+        color:$dark-blue;
+    }
+}
+.Stack-Text{
+    margin-top : 2.5rem; 
+}
+
+
+}
+
+//navbar 
+
+a.main-navbar__link.active{
+
+    border-bottom: 2px solid white;
+    padding-bottom: 58px;
+    
+    }
+
+ 

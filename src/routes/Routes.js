@@ -20,8 +20,8 @@ const App  = () =>
           <MobileHeader />
           <Routes>         
           <Route exact path="/"  element = { <Home />  } /> 
-          <Route path= 'Technology'  element = { <Technology />  }  />
-          <Route path= 'Crew'  element = { <Crew />  }  />
+          <Route path= 'Technology/*'  element = { <Technology />  }  />
+          <Route path= 'Crew/*'  element = { <Crew />  }  />
           <Route path="Destination/*"  element = { <Destination />  } />
           <Route path='*'  element= {<NotFound />   }    />
         </Routes>

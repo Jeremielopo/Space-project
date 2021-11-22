@@ -94,3 +94,127 @@
         width: 100vw;
         justify-content: space-around;
     }
+
+    //crew
+    #app {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar__Desktop{
+        width: 100vw;
+    }
+    .Crew {
+
+        padding-top: 19rem;
+
+     
+
+        .Stack-block{
+            flex-direction: row;
+        }
+        .nav-bar{
+            width: 30vw;
+            order: 4;
+            margin-left: 11rem;
+            }
+        .planet-block{
+            margin-top: 7rem;
+            margin-left: 0;
+        }
+        .Stack-block__Title {
+            margin-left: 11vw;
+            padding-bottom: 69rem;
+            position: absolute;
+            left: 3rem;
+        }
+        .Stack-Text {
+            display: flex;
+            flex-direction: column;
+            margin-top: 9rem 0;
+            margin: 8rem 15rem;
+            align-items: normal;
+            p{
+                text-align: left;
+                width: 40vw;
+            }
+        }
+    }
+
+    // Technology 
+
+
+.Technology{ 
+   .Stack-block{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    justify-content: space-between;
+    margin-bottom : 25vh; 
+   } 
+   .crewimg {
+        width: 41vw; 
+   }
+    .planet-block{
+        order: 2;
+    }
+    .Stack-block__flex{
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 51vw;
+        .nav-bar{
+            order:1; 
+            display: flex;
+            flex-direction: column;
+            height: 30rem;
+            align-items: center;
+        }
+    }
+    .Stack-Text {
+        order:2 ; 
+    }
+    .Stack-Text__paragraph{
+        width: 40vw;
+    }
+    .Stack-block__Title{
+        margin-left: 4vw;
+        text-align: initial;
+        margin-top : 30rem; 
+    }
+    .nav-bar__items{
+        
+
+        
+        &:hover{
+            border-color : white; 
+        }}
+}
+
+
+
+
+// navbar 
+
+
+a.main-navbar__link.active{
+
+
+    padding-bottom: 27px;
+    &:hover{
+        border-color : white; 
+    }
+    
+    }
+    a.main-navbar__link{
+
+        &:hover{
+            border-bottom: 2px solid rgba(255, 255, 255, 0.247);
+            padding-bottom: 27px;
+        }
+    }
