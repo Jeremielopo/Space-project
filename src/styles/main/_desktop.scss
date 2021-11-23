@@ -119,7 +119,7 @@
         .nav-bar{
             width: 30vw;
             order: 4;
-            margin-left: 11rem;
+            margin-left: 0rem;
             }
         .planet-block{
             margin-top: 7rem;
@@ -129,13 +129,13 @@
             margin-left: 11vw;
             padding-bottom: 69rem;
             position: absolute;
-            left: 3rem;
+            left: 10rem;
         }
         .Stack-Text {
             display: flex;
             flex-direction: column;
             margin-top: 9rem 0;
-            margin: 8rem 15rem;
+            margin: 8rem 0 15rem 31rem;
             align-items: normal;
             p{
                 text-align: left;
