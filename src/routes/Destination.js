@@ -28,7 +28,7 @@ export default function Portfolio() {
         <Routes>
         <Route path="mars" element={<ImgMars />} />
         <Route path="Titan" element={<ImgTitan />} />
-        <Route path="*" element={<ImgMoon />} />
+        <Route path="Moon" element={<ImgMoon />} />
         <Route path="Europa" element={<ImgEuropa />} />
         </Routes>
         
@@ -44,7 +44,7 @@ export default function Portfolio() {
               <NavLink to="Titan">TITAN</NavLink>
         </nav>
        <Routes>  
-        <Route path="*" element={<Moon />} />
+        <Route path="Moon" element={<Moon />} />
         <Route path="mars" element={<Mars />} />
         <Route path="Europa" element={<Europa />} />
         <Route path="Titan" element={<Titan />} />

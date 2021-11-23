@@ -11,7 +11,7 @@ return <div className="planet-block"><img className='crewimg' src={engineer} alt
 export  function Engineer() {
     return (
         <div className="Stack-Text">
-        <h1 className="Stack-Text__title" >Commander</h1>
+        <h1 className="Stack-Text__title" >Engineer</h1>
         <h2 className="Stack-Text__subtitle">Anousheh Ansari</h2>
         <p className="Stack-Text__paragraph">
         Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
