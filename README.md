@@ -5,7 +5,7 @@
 * * *
 ## Hello This a project that is made from a challenge found on [Front-End Mentor](https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-lopopola-kasongo-5b61b117b/).
 
-##  What is about the project ?
+##  What is about the project ? Here is the link to access [the result](https://spacelopoproject.netlify.app/)  
 
  The project consists of an integration made from a given design on figma or adobeXD. All the components (text and images were given).
 
