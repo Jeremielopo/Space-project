@@ -3,8 +3,8 @@
  ( [Github repository](https://github.com/Jeremielopo)  || [Linkedin](https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-lopopola-kasongo-5b61b117b/) )
  ---------------------------------------
 * * *
-## Hello This a project that is made from a challenge found on [Front-End Mentor](https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-lopopola-kasongo-5b61b117b/).
-Here is the link to access [the result](https://spacelopoproject.netlify.app/) 
+## Hello This a project that is made from a challenge found on [Front-End Mentor](https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-lopopola-kasongo-5b61b117b/).Here is the link to access [the result](https://spacelopoproject.netlify.app/) 
+
 
 ##  What is about the project ?  
 
