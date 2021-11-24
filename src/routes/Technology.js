@@ -19,7 +19,7 @@ export default function Technology() {
         <h5 className="Stack-block__Title"><span className="grey">03</span> Space lunch 101</h5>       
         <div className="Stack-block">
         <Routes>  
-        <Route path="*" element={ Desktop? <ImgvehiclePortrait/>: <ImgvehicleLandscape/>} />
+        <Route path="Vehicle" element={ Desktop? <ImgvehiclePortrait/>: <ImgvehicleLandscape/>} />
         <Route path="Capsule" element={ Desktop? <ImgcapsulePortrait/>: <ImgcapsuleLandscape/>} />
         <Route path="Spaceport" element={ Desktop? <ImgspacePortrait/>: <ImgspaceLandscape/>} />
 
@@ -27,12 +27,12 @@ export default function Technology() {
        
        <div className="Stack-block__flex">
         <nav className="nav-bar" >
-             <NavLink className="nav-bar__items"   to="*">1</NavLink>
+             <NavLink className="nav-bar__items"   to="Vehicle">1</NavLink>
              <NavLink className="nav-bar__items"   to="Spaceport">2</NavLink>
              <NavLink  className="nav-bar__items"  to="Capsule">3</NavLink>
        </nav>
       <Routes>  
-       <Route path="*" element={<Vehicle />} />
+       <Route path="Vehicle" element={<Vehicle />} />
        <Route path="Capsule" element={<Capsule />} />
        <Route path="Spaceport" element={<Spaceport />} />
      </Routes></div>

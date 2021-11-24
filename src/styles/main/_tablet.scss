@@ -1,3 +1,7 @@
+.main-navbar{
+    margin-top : 0 ; 
+}
+
 .Block {
     p{ width: 50vw;
         
@@ -108,4 +112,19 @@ a.main-navbar__link.active{
     
     }
 
+ .main-navbar  {
+        a{
+            font-size:1.6rem;
+        }
+ }
+
+ .main-navbar .main-navbar__item {
+    padding-left: 4vw;
+
+ }
+
+ a.active{
+    border-bottom : 1px solid white; 
+    padding-bottom: 0px; 
+}
  

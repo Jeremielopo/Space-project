@@ -21,7 +21,7 @@ export default function Crew() {
          <h5 className="Stack-block__Title"><span className="grey">02</span> Meet your crew</h5>       
          <div className="Stack-block">
          <Routes>  
-         <Route path="*" element={<ImgCommander />} />
+         <Route path="Commander" element={<ImgCommander />} />
          <Route path="Engineer" element={<ImgEngineer />} />
          <Route path="Pilot" element={<ImgPilot />} />
          <Route path="Specialist" element={<ImgSpecialist />} />
@@ -29,13 +29,13 @@ export default function Crew() {
         
         <div className="Stack-block__flex">
          <nav className="nav-bar" >
-              <NavLink className="nav-bar__items"   to="*"></NavLink>
+              <NavLink className="nav-bar__items"   to="Commander"></NavLink>
               <NavLink className="nav-bar__items"   to="Engineer"></NavLink>
               <NavLink  className="nav-bar__items"  to="Pilot"></NavLink>
               <NavLink className="nav-bar__items"   to="Specialist"></NavLink>
         </nav>
        <Routes>  
-        <Route path="*" element={<Commander />} />
+        <Route path="Commander" element={<Commander />} />
         <Route path="Engineer" element={<Engineer />} />
         <Route path="Pilot" element={<Pilot />} />
         <Route path="Specialist" element={<Specialist />} />
