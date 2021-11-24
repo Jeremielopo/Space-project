@@ -14,7 +14,7 @@
 
 
 
-##   What was the need  for that project ? 
+##   What were the needs  for that project ? 
 third-party components such as react modal , react router and react responsive. 
 
 
