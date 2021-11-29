@@ -4,10 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     color: white;
-    
+    height: 120%;
 
 }
 
@@ -66,10 +66,14 @@
 
 //home 
 
-
+.Home{
+    justify-content: flex-start;
+    height: 120%;
+}
 .main-home{
     display : flex; 
     flex-direction: column;
+    
 }
 
 .flexbox-block{
@@ -117,6 +121,8 @@
         width: 100vw;
     }
     .Crew {
+        height: 120%;
+        justify-content: flex-start;
 
         .Stack-block__Title{
             margin-left:initial;
@@ -157,6 +163,8 @@
 
 
 .Technology{ 
+    height: 120%;
+    justify-content: flex-start;
    .Stack-block{
     display: flex;
     flex-direction: row;
