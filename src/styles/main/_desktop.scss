@@ -5,9 +5,9 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     color: white;
-    padding-top: 12vh;
-    height: inherit;
+    
 
 }
 
@@ -69,7 +69,16 @@
 
 .main-home{
     display : flex; 
+    flex-direction: column;
 }
+
+.flexbox-block{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top : 14rem ;
+}
+
 .main-home__paragraph {
     width: 38vw;}
 
@@ -92,7 +101,7 @@
 
     .main-home {
         width: 100vw;
-        justify-content: space-around;
+        
     }
 
     //crew
@@ -109,34 +118,34 @@
     }
     .Crew {
 
-        padding-top: 19rem;
+        .Stack-block__Title{
+            margin-left:initial;
+            text-align: initial;
+            margin-left: clamp(5rem, 7vw, 8rem);
+        }
 
-     
+        .Stack-block__flex{
+            align-items: initial;
+        }
 
         .Stack-block{
             flex-direction: row;
+            margin-left: clamp(2rem,4vw, 5rem);
         }
         .nav-bar{
             width: 30vw;
             order: 4;
-            margin-left: 0rem;
+           
             }
         .planet-block{
             margin-top: 7rem;
             margin-left: 0;
         }
-        .Stack-block__Title {
-            margin-left: 11vw;
-            padding-bottom: 69rem;
-            position: absolute;
-            left: 10rem;
-        }
         .Stack-Text {
             display: flex;
             flex-direction: column;
-            margin-top: 9rem 0;
-            margin: 8rem 0 15rem 31rem;
             align-items: normal;
+            margin-left: 3rem;
             p{
                 text-align: left;
                 width: 40vw;
@@ -153,7 +162,7 @@
     flex-direction: row;
     align-items: self-start;
     justify-content: space-between;
-    margin-bottom : 25vh; 
+    
    } 
    .crewimg {
         width: 41vw; 
@@ -185,7 +194,7 @@
     .Stack-block__Title{
         margin-left: 4vw;
         text-align: initial;
-        margin-top : 30rem; 
+         
     }
     .nav-bar__items{
         
@@ -221,4 +230,13 @@ a.main-navbar__link.active{
     .main-navbar .main-navbar__item {
         padding-left: 8vw;
     
+     }
+
+     @keyframes appear {
+         0%{
+            opacity: 0;
+         }
+         100%{
+             opacity: 1;
+         }
      }

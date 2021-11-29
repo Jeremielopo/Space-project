@@ -1,9 +1,23 @@
 import React from 'react'
 import europa from '../../images/img/destination/image-europa.png'
+import { motion } from 'framer-motion';
+
+
+
+export const Transition = {duration:0.35, ease: [0.43,0.13,0.23,0.6]};
+
+
 
 export  function ImgEuropa (){
 
-return <div className="planet-block"><img className='planetimg' src={europa} alt="image of europa" /></div>
+
+
+
+
+
+
+
+return <div className="planet-block"><motion.img whileHover={{scale:1.1}}  transition={Transition} className='planetimg' src={europa} alt="image of europa" /></div>
 
 }
 

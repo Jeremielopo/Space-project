@@ -7,6 +7,9 @@ import { useMediaQuery } from 'react-responsive'
 import {ImgcapsulePortrait,ImgcapsuleLandscape,Capsule} from './technology/Capsule';
 import {ImgvehiclePortrait,ImgvehicleLandscape,Vehicle} from './technology/Vehicle';
 import {ImgspacePortrait,ImgspaceLandscape,Spaceport} from './technology/Spaceport'
+import Header from '../component/Header';
+import MobileHeader from '../component/Mobile-Header';
+import HeaderTablet from '../component/HeaderTablet';
 
 
 
@@ -16,6 +19,10 @@ export default function Technology() {
   
   return (
         <div className="Technology"  style = {Desktop? {backgroundImage:`url(${backgroundDesktop})`}: (Tablet? {backgroundImage:`url(${backgroundTablet})`}: {backgroundImage:`url(${backgroundMobile})`}  )}  >
+        <Header  />
+        <HeaderTablet />
+        <MobileHeader />
+        
         <h5 className="Stack-block__Title"><span className="grey">03</span> Space lunch 101</h5>       
         <div className="Stack-block">
         <Routes>  
@@ -31,6 +38,7 @@ export default function Technology() {
              <NavLink className="nav-bar__items"   to="Spaceport">2</NavLink>
              <NavLink  className="nav-bar__items"  to="Capsule">3</NavLink>
        </nav>
+       
       <Routes>  
        <Route path="Vehicle" element={<Vehicle />} />
        <Route path="Capsule" element={<Capsule />} />

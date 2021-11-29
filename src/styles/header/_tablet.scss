@@ -11,9 +11,7 @@ html {
 .navbar__Tablet {
     @include flex-row;
     justify-content: space-between;
-    width: 100vw;
-    position: absolute; 
-    top:0; 
+    width: 100vw; 
 }
 .main-navbar {
     display: flex;

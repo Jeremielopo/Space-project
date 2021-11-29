@@ -3,7 +3,9 @@ import backgroundDesktop from '../images/img/home/background-home-desktop.jpg';
 import backgroundTablet from '../images/img/home/background-home-tablet.jpg';
 import backgroundMobile from '../images/img/home/background-home-mobile.jpg';
 import { useMediaQuery } from 'react-responsive'
-
+import Header from '../component/Header';
+import MobileHeader from '../component/Mobile-Header';
+import HeaderTablet from '../component/HeaderTablet';
 
 
 export default function Home() {
@@ -14,6 +16,10 @@ export default function Home() {
         <main className='main-home'
         
         >
+        <Header  />
+        <HeaderTablet />
+        <MobileHeader />
+        <div className='flexbox-block'> 
         <div className="main-home__Texte">
         <h5 >So, you want to travel to</h5>
          <h2 className="main-home__Title">
@@ -27,7 +33,7 @@ export default function Home() {
         <div className="main-home__button">
         <button className="main-home__CTA">Explore</button>
         </div>
-       
+       </div>
         
         
         

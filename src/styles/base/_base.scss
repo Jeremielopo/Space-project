@@ -46,6 +46,17 @@ html,body {
 
 
 
+#app {
+    height:inherit;
+}
+// @media  (min-height:720px ) {
+//         #app > div, #app > section{
+             
+//                 height: 100%;
+//                 justify-content: initial;
+//         }
+// }
+
 h1{
     font-size:$h1;
 }

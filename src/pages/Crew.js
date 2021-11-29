@@ -8,6 +8,9 @@ import {Commander,ImgCommander} from './crew/Commander'
 import { Specialist,ImgSpecialist } from './crew/Specialist';
 import { Pilot,ImgPilot } from './crew/Pilot';
 import { Engineer,ImgEngineer } from './crew/Engineer';
+import Header from '../component/Header';
+import MobileHeader from '../component/Mobile-Header';
+import HeaderTablet from '../component/HeaderTablet';
 
 
 
@@ -16,7 +19,9 @@ export default function Crew() {
     const Tablet = useMediaQuery({ query: '(min-width: 700px)' });
     return (
         <div className='Crew'  style = {Desktop? {backgroundImage:`url(${backgroundDesktop})`}: (Tablet? {backgroundImage:`url(${backgroundTablet})`}: {backgroundImage:`url(${backgroundMobile})`}  )}>
-           
+        <Header  />
+        <HeaderTablet />
+        <MobileHeader />
           
          <h5 className="Stack-block__Title"><span className="grey">02</span> Meet your crew</h5>       
          <div className="Stack-block">

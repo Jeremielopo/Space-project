@@ -1,21 +1,23 @@
 
  .Home,.Crew,.Technology { 
     background-repeat: no-repeat;
-    height: inherit;
-  
     background-size: cover;
     display: flex;
     justify-content: center;
     color: white;
-    padding-top: 12vh;
+    .Stack-block,.flexbox-block{
+        animation: appear 0.35s ease-in-out forwards;
+    .Planet{
+    opacity: 0;
+    animation: appear 0.35s ease-in-out forwards;
+    }
+
+    }
+    
   
 
 }
 
-.Destination,.Home,.Crew,.Technology {
-    min-height: 800px;
-    overflow-y: hidden;
-}
 
 
 .Destination{ 
@@ -24,11 +26,25 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding-top: 12vh;
-   
+    flex-direction: column;
+    
+    .planet-block{
+    margin-bottom: 3rem;
+}
+    .Stack-block{
+        animation: appear 0.35s ease-in-out forwards;
+    .Planet {
+    opacity: 0;
+    animation: appear 0.35s ease-in-out forwards;
+    }
+    }
+   .planetimg{
+    animation: rotation 200s linear  infinite alternate;
+}
   
 
 }
+
 
 .part-two{
     display: flex;
@@ -142,6 +158,7 @@
     font-size: 5rem;
     border: 1px solid transparent;
     background: white;
+    transition: all 0.6s ease-in-out;
 }
 
 .main-home__Texte{
@@ -176,13 +193,18 @@
 //Crew
 .Crew {
     flex-direction: column;
-    padding-top: 15vh;
     .Stack-block__Title{
-        color :white; 
+        color :white;
+         
+    }
+    .Stack-Text{
+        opacity: 0;
+        animation: appear 0.6s ease-in-out forwards;
     }
     .Stack-block{
       justify-content: normal;  
       width: 100vw;
+      
     }
     .nav-bar{
         width: 36vw;
@@ -266,7 +288,13 @@
         font-size : 3rem; 
     }
     .crewimg{
-        width : 102vw
+        width : 102vw;
+        opacity: 0;
+        animation: appear 0.6s ease-in-out both;
+    }
+    .Stack-Text{
+        opacity: 0;
+        animation: appear 0.6s ease-in-out both;
     }
     .nav-bar{
        .nav-bar__items{
@@ -405,5 +433,24 @@ a.nav-bar__items.active {
 .logo {
     a.active {
         border : 0 ; 
+    }
+}
+
+
+@keyframes rotation {
+    0% {
+        transform :rotate(0) translateY(0) translateX(0);
+    }
+    100% {
+        transform :rotate(360deg) translateY(20px) translateX(10px)
+    }
+}
+
+@keyframes appear {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
